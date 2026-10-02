@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#080b10" />
+        <meta
+            name="description"
+            content="Conheça os projetos de Maximilliano Cramer. Desenvolvimento de sites estáticos, landing pages e portfólios responsivos para dar forma à sua história."
+        />
+        <title>Maximilliano Cramer | Sites estáticos e landing pages</title>
+        <link rel="canonical" href="https://maximillianocramer.com.br/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:site_name" content="Maximilliano Cramer" />
+        <meta property="og:title" content="Maximilliano Cramer | Sites estáticos e landing pages" />
+        <meta
+            property="og:description"
+            content="Sites estáticos, landing pages e portfólios responsivos para dar forma à sua história. Conheça meus projetos."
+        />
+        <meta property="og:url" content="https://maximillianocramer.com.br/" />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Maximilliano Cramer",
+                "url": "https://maximillianocramer.com.br/",
+                "jobTitle": "Desenvolvedor front-end",
+                "sameAs": ["https://www.linkedin.com/in/maximilliano-cramer1996/"]
+            }
+        </script>
+        <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg" />
+        <link
+            rel="preload"
+            as="font"
+            href="assets/fonts/Z003-MediumItalic.otf"
+            type="font/otf"
+            crossorigin
+        />
+        <link rel="stylesheet" href="css/global.css" />
+        <link rel="stylesheet" href="css/layout.css" />
+        <link rel="stylesheet" href="css/cover.css" />
+        <link rel="stylesheet" href="css/book.css" />
+        <link rel="stylesheet" href="css/projects.css" />
+        <link rel="stylesheet" href="css/contact.css" />
+        <link rel="stylesheet" href="css/controls.css" />
+        <link rel="stylesheet" href="css/animations.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+        <script src="js/pagination.js" defer></script>
+        <script src="js/animations.js" defer></script>
+        <script src="js/book.js" defer></script>
+        <script src="js/contact-config.js" defer></script>
+        <script src="js/contacts.js" defer></script>
+    </head>
+    <body>
+        <a class="skip-link" href="#main">Pular para o conteúdo</a>
+        <header class="site-header">
+            <a class="brand" href="index.html" aria-label="Maximilliano Cramer — capa"
+                ><img src="assets/brand/monogram.svg" alt="" width="72" height="60"
+            /></a>
+            <span class="header-caption">HISTÓRIAS &amp; DESENVOLVIMENTO WEB</span>
+            <span class="header-edition">MAXIMILLIANO CRAMER / PORTFÓLIO</span>
+        </header>
+        <main id="main" tabindex="-1">
+            <section class="cover-scene" id="cover" aria-labelledby="cover-title">
+                <header class="collection-heading">
+                    <p class="invitation">ALGUMAS HISTÓRIAS MERECEM SER ABERTAS.</p>
+                    <h1 class="collection-title" id="cover-title">
+                        A coleção de Maximilliano Cramer
+                    </h1>
+                    <p class="collection-description">
+                        Sites estáticos, landing pages e portfólios por Maximilliano Cramer.
+                    </p>
+                    <p class="collection-description">Escolha um volume. Descubra uma história.</p>
+                    <button
+                        type="button"
+                        class="motion-toggle"
+                        id="motion-toggle"
+                        aria-pressed="false"
+                        hidden
+                    >
+                        Ativar animações
+                    </button>
+                </header>
+
+                <div class="book-collection">
+                    <!-- Volume I: trajetória pessoal. -->
+                    <article
+                        class="book-cover collection-book collection-book--story"
+                        id="book-cover"
+                        aria-labelledby="volume-story-title"
+                    >
+                        <div class="cover-frame">
+                            <span class="cover-volume">VOLUME I</span>
+
+                            <div class="cover-title-group">
+                                <span class="cover-first-name">Maximilliano Cramer</span>
+                                <h2 class="volume-cover-title" id="volume-story-title">
+                                    Minha história
+                                </h2>
+                                <p class="cover-subtitle">
+                                    Entre descobertas<br />
+                                    e novos caminhos
+                                </p>
+                            </div>
+
+                            <div class="cover-bottom">
+                                <span class="cover-divider" aria-hidden="true"></span>
+                                <button
+                                    type="button"
+                                    class="open-button"
+                                    id="open-book"
+                                    data-open-volume="1"
+                                    hidden
+                                >
+                                    Abrir minha história
+                                </button>
+                                <span class="cover-note">ONDE TUDO COMEÇOU.</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Volume II: histórias dos projetos desenvolvidos. -->
+                    <article
+                        class="book-cover collection-book collection-book--work"
+                        id="work-cover"
+                        aria-labelledby="volume-work-title"
+                    >
+                        <div class="cover-frame">
+                            <span class="cover-volume">VOLUME II</span>
+
+                            <div class="cover-title-group">
+                                <span class="cover-first-name">Maximilliano Cramer</span>
+                                <h2 class="volume-cover-title" id="volume-work-title">
+                                    Histórias que construí
+                                </h2>
+                                <p class="cover-subtitle">
+                                    Ideias que ganharam<br />
+                                    forma na web
+                                </p>
+                            </div>
+
+                            <div class="cover-bottom">
+                                <span class="cover-divider" aria-hidden="true"></span>
+                                <button
+                                    type="button"
+                                    class="open-button"
+                                    id="open-projects"
+                                    data-open-volume="2"
+                                    hidden
+                                >
+                                    Conhecer meu trabalho
+                                </button>
+                                <span class="cover-note">CADA PROJETO, UMA HISTÓRIA.</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Volume III: convite para novos projetos. -->
+                    <article
+                        class="book-cover collection-book collection-book--future"
+                        id="future-cover"
+                        aria-labelledby="volume-future-title"
+                    >
+                        <div class="cover-frame">
+                            <span class="cover-volume">VOLUME III</span>
+
+                            <div class="cover-title-group">
+                                <span class="cover-first-name">Um convite para você</span>
+                                <h2 class="volume-cover-title" id="volume-future-title">
+                                    Sua próxima história
+                                </h2>
+                                <p class="cover-subtitle">
+                                    Há páginas esperando<br />
+                                    pela sua ideia
+                                </p>
+                            </div>
+
+                            <div class="cover-bottom">
+                                <span class="cover-divider" aria-hidden="true"></span>
+                                <button
+                                    type="button"
+                                    class="open-button"
+                                    id="open-future"
+                                    data-open-volume="3"
+                                    hidden
+                                >
+                                    Descobrir o próximo capítulo
+                                </button>
+                                <span class="cover-note">O PRÓXIMO CAPÍTULO PODE SER SEU.</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="cover-hint">Cada volume revela uma parte deste caminho.</p>
+            </section>
+
+            <!-- O conteúdo permanece no HTML e é legível mesmo sem JavaScript. -->
+            <section class="reader" id="reader" aria-label="Livro de Maximilliano Cramer">
+                <div class="reader-toolbar" id="reader-toolbar" hidden>
+                    <button type="button" class="quiet-button" id="close-book">
+                        Voltar à coleção
+                    </button>
+                    <nav
+                        class="volume-navigation"
+                        id="volume-navigation"
+                        aria-label="Volumes do livro"
+                    >
+                        <button
+                            type="button"
+                            class="volume-button"
+                            data-volume-start="0"
+                            aria-pressed="true"
+                        >
+                            Vol. I · Minha história
+                        </button>
+                        <button
+                            type="button"
+                            class="volume-button"
+                            data-volume-start="3"
+                            aria-pressed="false"
+                        >
+                            Vol. II · Meu trabalho
+                        </button>
+                        <button
+                            type="button"
+                            class="volume-button"
+                            data-volume-start="6"
+                            aria-pressed="false"
+                        >
+                            Vol. III · Próximo capítulo
+                        </button>
+                    </nav>
+                    <button type="button" class="quiet-button" id="open-index">Índice</button>
+                </div>
+                <div class="book-spread" id="book-spread">
+                    <article
+                        class="page"
+                        data-title="Antes do código, a curiosidade"
+                        data-volume="1"
+                        data-volume-label="Volume I"
+                        data-local-page="1"
+                        tabindex="-1"
+                        aria-labelledby="page-title-1"
+                    >
+                        <div class="page-running-head">VOLUME I / MINHA HISTÓRIA</div>
+                        <div class="page-body">
+                            <p class="chapter-label">CAPÍTULO I</p>
+                            <h2 id="page-title-1">Antes do código,<br />a curiosidade.</h2>
+                            <p class="drop-cap">
+                                Desde pequeno, a tecnologia fazia parte da minha vida. Gostava de
+                                mexer nos computadores, explorar e descobrir suas possibilidades.
+                                Era algo que me prendia naturalmente, sem imaginar que um dia
+                                poderia se tornar meu trabalho.
+                            </p>
+                            <p>
+                                Comecei cedo minha vida profissional. Fui conquistando espaço,
+                                assumindo responsabilidades e construindo um caminho. Enquanto isso,
+                                aquela curiosidade continuava comigo, ainda sem fazer parte dos meus
+                                planos.
+                            </p>
+                            <p>
+                                Por muito tempo, segui esse caminho sem pensar que aquela
+                                curiosidade pudesse me levar a outro lugar. Até que uma pergunta me
+                                fez olhar com mais atenção para o que eu realmente queria.
+                            </p>
+                        </div>
+                        <span class="page-number">01</span>
+                    </article>
+                    <article
+                        class="page"
+                        data-title="Despertar para a vida"
+                        data-volume="1"
+                        data-volume-label="Volume I"
+                        data-local-page="2"
+                        tabindex="-1"
+                        aria-labelledby="page-title-2"
+                    >
+                        <div class="page-running-head">VOLUME I / MINHA HISTÓRIA</div>
+                        <div class="page-body">
+                            <p class="chapter-label">CAPÍTULO II</p>
+                            <h2 id="page-title-2">Despertar<br />para a vida.</h2>
+                            <p class="drop-cap">
+                                Em uma das últimas conversas que tive com meu pai, ele me perguntou
+                                se o caminho que eu seguia era realmente o que queria para mim. Ele
+                                considerava meu trabalho bom, mas aquela pergunta me fez perceber
+                                que havia outras possibilidades a explorar.
+                            </p>
+                            <p>
+                                Depois do seu falecimento, voltei àquela conversa. A pergunta ganhou
+                                outro significado, e muita coisa começou a mudar a partir dali —
+                                dentro de mim e na maneira como eu conduzia minha vida.
+                            </p>
+                            <p>
+                                Foi como acordar de um sono profundo. Passei a reconhecer vontades
+                                que até então não tinham encontrado espaço nas minhas escolhas.
+                                Entre elas estava a tecnologia, presente desde pequeno, agora com a
+                                possibilidade de se tornar um caminho. Comecei a estudar e a dar os
+                                primeiros passos nessa direção.
+                            </p>
+                        </div>
+                        <span class="page-number">02</span>
+                    </article>
+                    <article
+                        class="page"
+                        data-title="Fazer uma história ganhar forma"
+                        data-volume="1"
+                        data-volume-label="Volume I"
+                        data-local-page="3"
+                        tabindex="-1"
+                        aria-labelledby="page-title-3"
+                    >
+                        <div class="page-running-head">VOLUME I / MINHA HISTÓRIA</div>
+                        <div class="page-body">
+                            <p class="chapter-label">CAPÍTULO III</p>
+                            <h2 id="page-title-3">Fazer uma história<br />ganhar forma.</h2>
+                            <p class="drop-cap">
+                                Nunca fui bom com desenhos, mas sempre gostei de imaginar o que
+                                poderia criar. Nessa busca, encontrei uma maneira de partir de uma
+                                ideia, experimentar e trabalhar nela até começar a vê-la existir.
+                                Como a música, que expressa sentimentos por meio de uma melodia,
+                                encontrei uma forma de dar vida às ideias e contar histórias.
+                            </p>
+                            <p>
+                                Cada projeto carrega uma história: o que já foi construído, o que o
+                                torna único e as possibilidades que ainda estão por vir. Podemos dar
+                                a essa história uma nova forma, transformando-a em um site que
+                                expresse sua identidade.
+                            </p>
+                            <p>
+                                Talvez o destino ainda reserve novas histórias. A sua pode ser uma
+                                delas. Podemos contá-la juntos e escrever um novo capítulo.
+                            </p>
+                        </div>
+                        <span class="page-number">03</span>
+                    </article>
+                    <article
+                        class="page"
+                        data-title="Carmen Tarot"
+                        data-volume="2"
+                        data-volume-label="Volume II"
+                        data-local-page="1"
+                        tabindex="-1"
+                        aria-labelledby="page-title-5"
+                    >
+                        <div class="page-running-head">VOLUME II / MEU TRABALHO</div>
+                        <div class="page-body">
+                            <p class="chapter-label">VOLUME II / UM PROJETO PARA MINHA MÃE</p>
+                            <h2 id="page-title-5">Carmen Tarot.<br />Uma história próxima.</h2>
+                            <figure class="project-preview">
+                                <a
+                                    href="https://www.carmentarot.com.br/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Visitar o site Carmen Tarot — abre em nova aba"
+                                >
+                                    <img
+                                        src="assets/images/projects/carmen.jpg"
+                                        alt="Tela inicial do site Carmen Tarot, desenvolvido por Maximilliano Cramer"
+                                        width="1348"
+                                        height="926"
+                                        loading="lazy"
+                                        decoding="async"
+                                    />
+                                </a>
+                                <figcaption>
+                                    Carmen Tarot · Clique na imagem para visitar.
+                                </figcaption>
+                            </figure>
+                            <p class="drop-cap">
+                                O Carmen Tarot nasceu de uma história próxima da minha: o trabalho
+                                da minha mãe, cartomante e terapeuta. Criar seu site foi uma
+                                oportunidade de entender o que ela queria transmitir e dar a isso
+                                uma forma própria.
+                            </p>
+
+                            <p>
+                                Reuni sua apresentação, os serviços e os depoimentos em um espaço
+                                que permitisse conhecer seu trabalho e encontrar os caminhos para
+                                contato e agendamento.
+                            </p>
+
+                            <p>
+                                Esse projeto foi o ponto de partida desta fase. Uma história que eu
+                                conhecia de perto ganhou uma presença na internet, e aquilo que eu
+                                estava aprendendo passou a fazer parte de algo real.
+                            </p>
+                            <ul class="project-technologies" aria-label="Tecnologias utilizadas">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <a
+                                class="project-link"
+                                href="https://www.carmentarot.com.br/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Visitar site · abre em nova aba
+                            </a>
+                        </div>
+                        <span class="page-number">01</span>
+                    </article>
+                    <article
+                        class="page"
+                        data-title="Axis Transporte"
+                        data-volume="2"
+                        data-volume-label="Volume II"
+                        data-local-page="2"
+                        tabindex="-1"
+                        aria-labelledby="page-title-6"
+                    >
+                        <div class="page-running-head">VOLUME II / MEU TRABALHO</div>
+                        <div class="page-body">
+                            <p class="chapter-label">VOLUME II / LOGÍSTICA E TRANSPORTES</p>
+                            <h2 id="page-title-6">Axis Transporte.<br />Uma nova apresentação.</h2>
+                            <figure class="project-preview">
+                                <a
+                                    href="https://maximillianocramer-dev.github.io/Axis-Transporte-Portfolio/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Visitar o site Axis Transporte — abre em nova aba"
+                                >
+                                    <img
+                                        src="assets/images/projects/axis.jpg"
+                                        alt="Tela inicial do site Axis Transporte, desenvolvido por Maximilliano Cramer"
+                                        width="1348"
+                                        height="926"
+                                        loading="lazy"
+                                        decoding="async"
+                                    />
+                                </a>
+                                <figcaption>
+                                    Axis Transporte · Clique na imagem para visitar.
+                                </figcaption>
+                            </figure>
+                            <p class="drop-cap">
+                                Este projeto começou com uma proposta para uma empresa de logística.
+                                A ideia era organizar seus serviços e construir uma apresentação que
+                                transmitisse confiança a quem chegasse ao site.
+                            </p>
+
+                            <p>
+                                O trabalho passou pela estrutura das informações, pela identidade
+                                visual e pela navegação em diferentes telas. Cada parte foi pensada
+                                para facilitar o entendimento dos serviços e o acesso ao contato.
+                            </p>
+
+                            <p>
+                                A proposta não seguiu adiante com a empresa, mas a criação encontrou
+                                outro destino. Com o nome Axis Transporte, passou a integrar meu
+                                portfólio como um projeto conceitual e uma base que posso adaptar a
+                                novas histórias.
+                            </p>
+                            <ul class="project-technologies" aria-label="Tecnologias utilizadas">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <a
+                                class="project-link"
+                                href="https://maximillianocramer-dev.github.io/Axis-Transporte-Portfolio/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >Visitar site · abre em nova aba</a
+                            >
+                        </div>
+                        <span class="page-number">02</span>
+                    </article>
+                    <article
+                        class="page"
+                        data-title="Ayumi"
+                        data-volume="2"
+                        data-volume-label="Volume II"
+                        data-local-page="3"
+                        tabindex="-1"
+                        aria-labelledby="page-title-7"
+                    >
+                        <div class="page-running-head">VOLUME II / MEU TRABALHO</div>
+                        <div class="page-body">
+                            <p class="chapter-label">VOLUME II / RESTAURANTE JAPONÊS</p>
+                            <h2 id="page-title-7">Ayumi.<br />Uma identidade à mesa.</h2>
+                            <figure class="project-preview">
+                                <a
+                                    href="https://maximillianocramer-dev.github.io/Ayumi-site_projeto/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Visitar o site Ayumi — abre em nova aba"
+                                >
+                                    <img
+                                        src="assets/images/projects/ayumi.jpg"
+                                        alt="Tela inicial do site Ayumi, desenvolvido por Maximilliano Cramer"
+                                        width="1348"
+                                        height="926"
+                                        loading="lazy"
+                                        decoding="async"
+                                    />
+                                </a>
+                                <figcaption>Ayumi · Clique na imagem para visitar.</figcaption>
+                            </figure>
+                            <p class="drop-cap">
+                                O Ayumi começou como um projeto para a faculdade e uma oportunidade
+                                de aproximar o aprendizado de um negócio real. A proposta era dar ao
+                                restaurante japonês um espaço para apresentar sua identidade e
+                                facilitar o encontro com seus clientes.
+                            </p>
+
+                            <p>
+                                Organizei a apresentação da casa, os destaques do cardápio e as
+                                informações para quem deseja visitar ou fazer um pedido. A
+                                experiência foi ajustada para que esses caminhos fossem acessíveis
+                                também pelo celular.
+                            </p>
+
+                            <p>
+                                O projeto reúne estudo e prática em uma criação voltada a uma
+                                necessidade concreta. O próximo passo é validar a proposta com o
+                                responsável pelo restaurante e ajustar os detalhes para representar
+                                a casa com fidelidade.
+                            </p>
+                            <ul class="project-technologies" aria-label="Tecnologias utilizadas">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <a
+                                class="project-link"
+                                href="https://maximillianocramer-dev.github.io/Ayumi-site_projeto/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >Visitar site · abre em nova aba</a
+                            >
+                        </div>
+                        <span class="page-number">03</span>
+                    </article>
+                    <article
+                        class="page"
+                        data-title="O próximo capítulo"
+                        data-volume="3"
+                        data-volume-label="Volume III"
+                        data-local-page="1"
+                        tabindex="-1"
+                        aria-labelledby="page-title-8"
+                    >
+                        <div class="page-running-head">VOLUME III / O PRÓXIMO CAPÍTULO</div>
+                        <div class="page-body">
+                            <p class="chapter-label">VOLUME III / NOVAS POSSIBILIDADES</p>
+                            <h2 id="page-title-8">Toda ideia<br />tem uma história.</h2>
+                            <p class="drop-cap">
+                                Toda ideia tem uma história. Talvez a sua já tenha percorrido um
+                                longo caminho, ou esteja começando agora. Podemos dar a ela uma nova
+                                forma e escrever um novo capítulo.
+                            </p>
+
+                            <p>
+                                Desenvolvo sites estáticos, landing pages e portfólios com HTML, CSS
+                                e JavaScript. São projetos para apresentar seu trabalho, divulgar
+                                serviços e facilitar o contato, com uma experiência adaptada a
+                                computadores e celulares.
+                            </p>
+
+                            <p>
+                                Meu foco é criar sites de apresentação, com identidade e caminhos
+                                claros para contato. Integro WhatsApp, agendamento e plataformas
+                                externas quando necessário. Escolhi concentrar meu trabalho nesse
+                                tipo de experiência; sistemas com login, banco de dados e back-end
+                                não fazem parte dos serviços que ofereço.
+                            </p>
+                            <!-- Os links só aparecem quando houver dados em js/contact-config.js. -->
+                            <nav
+                                class="contact-links"
+                                id="contact-links"
+                                aria-label="Canais de contato"
+                                hidden
+                            ></nav>
+                            <span class="author-signature">Maximilliano Cramer</span>
+                        </div>
+                        <span class="page-number">01</span>
+                    </article>
+                    <aside
+                        class="blank-page-invitation"
+                        id="blank-page-invitation"
+                        aria-label="Convite para um próximo projeto"
+                        hidden
+                    >
+                        <div class="story-stamp">
+                            <p>
+                                Sua história<br />
+                                pode fazer parte<br />
+                                destas páginas.
+                            </p>
+                        </div>
+                    </aside>
+                </div>
+                <nav
+                    class="reader-controls"
+                    id="reader-controls"
+                    aria-label="Navegação do livro"
+                    hidden
+                >
+                    <button type="button" id="previous-page" class="page-button">
+                        Página anterior
+                    </button>
+                    <span
+                        id="page-status"
+                        role="status"
+                        class="page-status"
+                        aria-live="polite"
+                        aria-atomic="true"
+                    ></span>
+                    <button type="button" id="next-page" class="page-button">Próxima página</button>
+                </nav>
+                <p class="reader-help" id="reader-help" hidden>
+                    Use os botões ou as teclas ← e → para virar as páginas.
+                </p>
+            </section>
+        </main>
+        <dialog id="index-dialog" aria-labelledby="index-title">
+            <div class="index-heading">
+                <h2 id="index-title">Índice</h2>
+                <button type="button" id="close-index" class="quiet-button">Fechar</button>
+            </div>
+            <p class="index-caption">Entre histórias e tecnologia</p>
+            <nav class="index-navigation" aria-label="Índice dos volumes">
+                <section class="index-volume" aria-labelledby="index-volume-one">
+                    <h3 class="index-volume-label" id="index-volume-one">
+                        VOLUME I · MINHA HISTÓRIA
+                    </h3>
+                    <ol class="index-list">
+                        <li>
+                            <button type="button" data-go-page="0">
+                                <span>Antes do código, a curiosidade</span><span>01</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" data-go-page="1">
+                                <span>Despertar para a vida</span><span>02</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" data-go-page="2">
+                                <span>Fazer uma história ganhar forma</span><span>03</span>
+                            </button>
+                        </li>
+                    </ol>
+                </section>
+                <section class="index-volume" aria-labelledby="index-volume-two">
+                    <h3 class="index-volume-label" id="index-volume-two">
+                        VOLUME II · MEU TRABALHO
+                    </h3>
+                    <ol class="index-list">
+                        <li>
+                            <button type="button" data-go-page="3">
+                                <span>Carmen Tarot</span><span>01</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" data-go-page="4">
+                                <span>Axis Transporte</span><span>02</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" data-go-page="5">
+                                <span>Ayumi</span><span>03</span>
+                            </button>
+                        </li>
+                    </ol>
+                </section>
+                <section class="index-volume" aria-labelledby="index-volume-three">
+                    <h3 class="index-volume-label" id="index-volume-three">
+                        VOLUME III · O PRÓXIMO CAPÍTULO
+                    </h3>
+                    <ol class="index-list">
+                        <li>
+                            <button type="button" data-go-page="6">
+                                <span>O próximo capítulo</span><span>01</span>
+                            </button>
+                        </li>
+                    </ol>
+                </section>
+            </nav>
+        </dialog>
+        <footer class="site-footer">
+            <span>© <span id="year">2026</span> Maximilliano Cramer.</span
+            ><span>Todos os direitos reservados.</span>
+        </footer>
+    </body>
+</html>

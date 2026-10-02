@@ -1,0 +1,41 @@
+/* 02. Cabeçalho e rodapé externo */
+.site-header {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 22px 44px;
+    min-height: 84px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 1px solid var(--line);
+}
+.brand {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+.brand img {
+    display: block;
+    width: 72px;
+    height: 60px;
+}
+.header-caption,
+.header-edition {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+}
+.header-edition {
+    margin-left: auto;
+}
+.site-footer {
+    max-width: 1440px;
+    margin: auto;
+    padding: 22px 44px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 0.75rem;
+    color: var(--muted);
+    border-top: 1px solid var(--line);
+}

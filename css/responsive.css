@@ -1,0 +1,243 @@
+/* 06. Uma página por vez em telas menores; sem alturas fixas. */
+@media (max-width: 859px) {
+    .header-edition {
+        display: none;
+    }
+    .reader-toolbar {
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+    .volume-navigation {
+        order: 3;
+        flex-basis: 100%;
+    }
+    .volume-button {
+        flex: 1;
+    }
+    .site-header {
+        padding: 18px 24px;
+    }
+    .header-caption {
+        margin-left: auto;
+        max-width: 230px;
+        text-align: right;
+        letter-spacing: 0.07em;
+    }
+    .reader {
+        max-width: 760px;
+        width: 100%;
+        padding: 24px 20px 30px;
+    }
+    .book-spread {
+        grid-template-columns: 1fr;
+    }
+    .page {
+        min-height: 590px;
+        padding: 25px 34px;
+    }
+    .page h2 {
+        font-size: 3rem;
+    }
+    .page p {
+        font-size: 1.06rem;
+    }
+    .page:nth-child(even) {
+        background: linear-gradient(90deg, #ded5c5, var(--paper) 8%, #efe9de 88%, #d1c6b4);
+    }
+    .site-footer {
+        padding: 22px 24px;
+    }
+}
+@media (max-width: 420px) {
+    .cover-scene {
+        padding: 28px 22px 32px;
+    }
+    .brand img {
+        width: 60px;
+        height: 50px;
+    }
+    .cover-project-link {
+        margin-top: 22px;
+    }
+    .volume-button {
+        padding: 10px 9px;
+        font-size: 0.875rem;
+    }
+    .invitation {
+        font-size: 0.75rem;
+        letter-spacing: 0.08em;
+    }
+    .book-cover {
+        min-height: 510px;
+        padding: 18px 17px 18px 25px;
+    }
+    .cover-frame {
+        min-height: 470px;
+        padding: 22px 12px;
+    }
+    .cover-title-group {
+        margin-top: 80px;
+    }
+    .cover-volume {
+        letter-spacing: 0.08em;
+    }
+    .cover-first-name {
+        font-size: 1rem;
+        letter-spacing: 0.1em;
+    }
+    .cover-title-group h1 {
+        font-size: 4.9rem;
+    }
+    .cover-bottom {
+        padding-top: 25px;
+    }
+    .cover-note {
+        letter-spacing: 0.03em;
+    }
+    .reader {
+        padding: 20px 14px 28px;
+    }
+    .page {
+        padding: 22px 25px;
+    }
+    .page h2 {
+        font-size: 2.7rem;
+    }
+    .page-body {
+        padding-top: 28px;
+    }
+    .reader-controls {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .page-status {
+        width: 100%;
+        order: -1;
+    }
+    .page-button {
+        flex: 1;
+        padding: 10px 12px;
+    }
+    .site-footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        padding: 24px 20px;
+        text-align: center;
+    }
+    .header-caption {
+        max-width: 190px;
+    }
+}
+
+/* Coleção de volumes: tablets e celulares. */
+@media (max-width: 1050px) and (min-width: 761px) {
+    .book-collection {
+        gap: 22px;
+    }
+
+    .book-cover {
+        padding: 16px 13px 16px 20px;
+    }
+
+    .cover-frame {
+        padding-inline: 10px;
+    }
+
+    .volume-cover-title {
+        font-size: 2.8rem;
+    }
+
+    .cover-note {
+        font-size: 0.6rem;
+        letter-spacing: 0.02em;
+    }
+}
+
+@media (max-width: 760px) {
+    .cover-scene {
+        padding: 24px 24px 36px;
+    }
+
+    .collection-heading {
+        margin-bottom: 28px;
+    }
+
+    .collection-title {
+        font-size: clamp(2.6rem, 7vw, 3.5rem);
+    }
+
+    .book-collection {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 36px;
+        max-width: 370px;
+    }
+
+    .book-cover {
+        min-height: 0;
+        padding: 18px 17px 18px 25px;
+    }
+
+    .cover-frame,
+    .collection-book--work .cover-frame {
+        min-height: 430px;
+        padding: 24px 14px 22px;
+    }
+
+    .cover-title-group {
+        margin-top: 54px;
+    }
+
+    .cover-volume {
+        letter-spacing: 0.2em;
+    }
+
+    .cover-first-name {
+        font-size: 0.85rem;
+        letter-spacing: 0.04em;
+    }
+
+    .volume-cover-title {
+        font-size: 3.4rem;
+    }
+
+    .cover-bottom {
+        padding-top: 30px;
+    }
+
+    .cover-note {
+        letter-spacing: 0.06em;
+    }
+
+    .collection-book:hover,
+    .collection-book:has(button:focus-visible) {
+        translate: none;
+    }
+}
+
+/* Interação com mouse e preferência escolhida no site. */
+@media (hover: hover) and (pointer: fine) {
+    html[data-motion='on'] .book-collection:not(.is-opening) .collection-book:hover {
+        transform: translateY(-6px) rotate(-1deg);
+    }
+}
+
+@media (hover: none) {
+    .collection-book:has(button:focus-visible) {
+        transform: none;
+    }
+}
+
+html[data-motion='off'] .collection-book,
+html[data-motion='off'] .open-button {
+    transition: none;
+}
+
+html[data-motion='off'] .collection-book:focus-within {
+    transform: none;
+}
+
+html[data-motion='off'] .book-collection.is-opening .collection-book:not(.is-selected) {
+    animation: none;
+}

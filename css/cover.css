@@ -1,0 +1,265 @@
+/* Coleção inicial e capas dos volumes. */
+.cover-scene {
+    padding: 28px 24px 40px;
+}
+
+.collection-heading {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.invitation {
+    margin: 0 0 12px;
+    color: var(--muted);
+    font-size: 0.75rem;
+    letter-spacing: 0.16em;
+}
+
+.collection-title {
+    margin: 0;
+    color: var(--white);
+    font-family: var(--script);
+    font-size: clamp(2.6rem, 4vw, 4rem);
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+.collection-description {
+    margin: 10px 0 0;
+    color: var(--muted);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.book-collection {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: center;
+    gap: 32px;
+    width: min(1100px, 100%);
+    margin-inline: auto;
+}
+
+.book-cover {
+    position: relative;
+    min-width: 0;
+    padding: 18px 17px 18px 25px;
+    border: 1px solid #7b869638;
+    border-radius: 3px 10px 10px 3px;
+    background-color: #111722;
+    background-image:
+        linear-gradient(180deg, #080b1050, #080b1035 30%, #080b10ed 90%),
+        url('../assets/images/nordic-night.webp');
+    background-position: 72% center;
+    background-size: cover;
+    box-shadow:
+        inset 10px 0 16px #000b,
+        inset -2px 0 2px #ffffff25,
+        6px 4px 0 -2px #b6b0a5,
+        9px 5px 0 -2px #373a40,
+        0 16px 28px #0008;
+    transform-origin: left center;
+}
+
+.collection-book {
+    backface-visibility: hidden;
+    transition: transform 280ms cubic-bezier(0.2, 0.7, 0.3, 1);
+}
+
+html[data-motion='on'] .collection-book:has(button:focus-visible) {
+    transform: translateY(-6px) rotate(-1deg);
+}
+
+/* Volume I: paisagem, memória e descoberta. */
+.collection-book--story {
+    --cover-accent: #b0becd;
+}
+
+/* Volume II: encadernação vinho com textura discreta. */
+.collection-book--work {
+    --cover-accent: #d7bbaa;
+
+    background-color: #32151d;
+    background-image:
+        linear-gradient(180deg, #080b1020, #080b1050 45%, #080b10dc),
+        url('../assets/images/volume-2-forja.webp');
+    background-position: center;
+    background-size: cover;
+}
+
+.collection-book--work .cover-frame {
+    min-height: 460px;
+    border-style: double;
+    border-width: 3px;
+}
+
+/* Volume III: um círculo ornamental sobre o azul da noite. */
+.collection-book--future {
+    --cover-accent: #d5bd87;
+
+    background-color: #201c16;
+    background-image:
+        linear-gradient(180deg, #100d0820, #100d0850 45%, #100d08dc),
+        url('../assets/images/volume-3-portal-dourado.webp');
+    background-position: center;
+    background-size: cover;
+}
+
+.collection-book--future .open-button {
+    background: #57452bed;
+}
+
+.collection-book--future .open-button:hover {
+    background: #725b37;
+}
+
+.collection-book--future .open-button {
+    background: #203c4eed;
+}
+
+.collection-book--future .open-button:hover {
+    background: #31586f;
+}
+
+.cover-frame {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 430px;
+    padding: 24px 14px 22px;
+    border: 1px solid var(--cover-accent);
+    text-align: center;
+}
+
+.cover-frame::before,
+.cover-frame::after {
+    position: absolute;
+    left: calc(50% - 7px);
+    width: 14px;
+    height: 14px;
+    border: 1px solid var(--cover-accent);
+    background: #111722;
+    content: '';
+    transform: rotate(45deg);
+}
+
+.cover-frame::before {
+    top: -8px;
+}
+
+.cover-frame::after {
+    bottom: -8px;
+}
+
+.cover-volume {
+    color: var(--cover-accent);
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+}
+
+.cover-title-group {
+    width: 100%;
+    margin-top: 54px;
+    text-shadow: 0 3px 15px #000;
+}
+
+.cover-first-name {
+    display: block;
+    color: #eee7dd;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    letter-spacing: 0.04em;
+}
+
+.volume-cover-title {
+    margin: 14px 0 12px;
+    color: #fff;
+    font-family: var(--script);
+    font-size: clamp(2.6rem, 3.8vw, 3.7rem);
+    font-weight: 400;
+    line-height: 1;
+    overflow-wrap: break-word;
+}
+
+.cover-subtitle {
+    margin: 0;
+    color: #eee7dd;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 0.95rem;
+    line-height: 1.65;
+}
+
+.cover-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    margin-top: auto;
+    padding-top: 30px;
+}
+
+.cover-divider {
+    width: 45px;
+    height: 1px;
+    background: var(--cover-accent);
+}
+
+.open-button {
+    min-height: 48px;
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid var(--cover-accent);
+    background: #7b2837ec;
+    color: #fff;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    transition: background 0.2s ease;
+}
+
+.open-button:hover {
+    background: #a13445;
+}
+
+.open-button:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 4px;
+}
+
+.cover-note {
+    color: #d1c5bc;
+    font-size: 0.65rem;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+}
+
+.cover-hint {
+    margin: 30px 0 0;
+    color: var(--muted);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 1.6;
+    text-align: center;
+}
+.motion-toggle {
+    margin-top: 16px;
+    padding: 8px 14px;
+    border: 1px solid #a8c4d750;
+    border-radius: 3px;
+    background: #101c2b;
+    color: var(--white);
+    font-size: 0.8rem;
+}
+
+.motion-toggle:focus-visible {
+    outline: 2px solid var(--white);
+    outline-offset: 4px;
+}
+
+html[data-motion] .collection-book {
+    cursor: pointer;
+}

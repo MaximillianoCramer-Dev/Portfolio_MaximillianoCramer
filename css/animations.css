@@ -1,0 +1,99 @@
+/* Folha em 3D: frente e verso giram ao redor da lombada. */
+.turn-sheet {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    z-index: 5;
+    transform-style: preserve-3d;
+    pointer-events: none;
+    will-change: transform;
+}
+
+.turn-forward {
+    left: 50%;
+    transform-origin: left center;
+}
+
+.turn-backward {
+    left: 0;
+    transform-origin: right center;
+}
+
+.turn-face {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    overflow: hidden;
+    box-shadow: 0 4px 25px #0005;
+}
+
+.turn-front {
+    transform: translateZ(0.5px);
+}
+
+.turn-reverse {
+    transform: rotateY(180deg) translateZ(0.5px);
+}
+
+.turn-face .page,
+.turn-stationary .page {
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.turn-stationary {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: 3;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.turn-stationary.is-left {
+    left: 0;
+}
+
+.turn-stationary.is-right {
+    right: 0;
+}
+
+.turn-sheet.turn-single {
+    width: 100%;
+    left: 0;
+    transform-origin: center center;
+}
+
+/* A coleção acompanha a abertura do volume escolhido. */
+.book-collection.is-opening {
+    pointer-events: none;
+}
+
+.book-collection.is-opening .collection-book {
+    transform: none;
+    transition: none;
+}
+
+.book-collection.is-opening .collection-book:not(.is-selected) {
+    animation: collection-book-away 420ms ease forwards;
+}
+
+.book-collection.is-opening .collection-book.is-selected {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes collection-book-away {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+}

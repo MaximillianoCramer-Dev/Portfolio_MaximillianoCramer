@@ -1,0 +1,27 @@
+/* Imagens dos projetos — estilos exclusivos do Volume II. */
+.project-preview {
+    margin: 0 0 25px;
+    border: 1px solid #655b5240;
+    background: #11151c;
+    box-shadow: 0 8px 18px #29262218;
+}
+.project-preview a {
+    display: block;
+}
+.project-preview img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.project-preview a:focus-visible {
+    outline: 3px solid #833340;
+    outline-offset: 4px;
+}
+.project-preview figcaption {
+    padding: 8px 12px;
+    color: #655b52;
+    background: #e6dece;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.6;
+}
